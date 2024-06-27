@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	background: #cdedf6;
+	color: #333333;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+ul {
+	list-style: none;
+}
+
+section {
+	margin-top: 3rem;
+}
+
+img {
+	border-radius: 1rem;
+	transition: all 1s ease;
+}
+
+img:hover {
+	transform: scale(1.03);
+}
+
+header,
+main {
+	margin: 0 4rem 0 4rem;
+}
+
+/*================================= NAVBAR =================================*/
+
+.nav__container {
+	width: 100%;
+	height: 3rem;
+	top: 0;
+	left: 0;
+	position: fixed;
+	padding: 0 3rem 0 3rem;
+	font-size: 1.2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 1;
+	background: #333333;
+}
+
+.nav__list {
+	display: flex;
+	gap: 3rem;
+	font-style: italic;
+}
+
+.nav__list a:hover {
+	color: #40c1e4;
+}
+
+/*================================= HEADER INFO =================================*/
+
+.header {
+	text-align: center;
+	color: #1d252f;
+	padding: 2rem 0 1rem 0;
+	font-size: 2.3rem;
+}
+
+.blog__intro p {
+	font-size: 1.2rem;
+}
+
+.head__img {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1.5rem;
+	height: 50vh;
+}
+
+.head__img img {
+	height: 90%;
+	width: 30%;
+	cursor: pointer;
+}
+
+/*================================= Blog Section =================================*/
+
+.blog article {
+	margin-bottom: 1.5rem;
+	border-bottom: 2px solid #333333;
+}
+
+.blog h3 {
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.blog p {
+	font-weight: 500;
+}
+
+.blog__gallary {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+}
+
+.blog__img {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	height: 100%;
+}
+
+.blog__gallary img {
+	height: auto;
+	width: 45%;
+}
+
+.blog__video {
+	height: 400px;
+	width: 80%;
+	border-radius: 1rem;
+	transition: all 1s ease;
+}
+
+.blog__video:hover {
+	transform: scale(1.03);
+}
+
+/*================================= About ME Section =================================*/
+.about {
+	border: 2px solid #333333;
+	border-radius: 1rem;
+	padding: 1rem;
+}
+
+/*================================= Contact Me Section =================================*/
+.contact {
+	border: 2px solid #333333;
+	border-radius: 1rem;
+	padding: 1rem;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+input {
+	width: 60%;
+	padding: 0.6rem;
+	resize: none;
+}
+
+textarea {
+	height: 100px;
+	width: 60%;
+	resize: none;
+}
+
+.btn {
+	display: inline-block;
+	width: fit-content;
+	background: #333333;
+	color: #fff;
+	padding: 0.5rem 1rem;
+	font-weight: 500;
+	cursor: pointer;
+	border-radius: 0.5rem;
+}
+
+.btn:hover {
+	transform: scale(1.1);
+	background: #40c1e4;
+	color: #333333;
+}
+
+/*================================= Footer =================================*/
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 5rem;
+	background: #333333;
+	margin-top: 2rem;
+	color: #fff;
+}
+
+.social {
+	display: flex;
+	justify-content: center;
+	padding: 0.5rem 0 0.5rem 0;
+	gap: 1rem;
+}
+
+.social i:hover {
+	color: #40c1e4;
+}
+
+/*================================= Media Query =================================*/
+@media (max-width: 768px) {
+	header,
+	main {
+		margin: 0 1rem 0 1rem;
+	}
+
+	.nav__container {
+		height: 3rem;
+		justify-content: center;
+	}
+
+	.nav__logo {
+		display: none;
+	}
+	.nav__list {
+		align-items: center;
+		gap: 1rem;
+	}
+
+	.head__img {
+		display: none;
+	}
+
+	.blog__img {
+		height: auto;
+	}
+
+	.blog__gallary img {
+		width: 45%;
+	}
+
+	.blog__video {
+		height: 300px;
+		width: 100%;
+	}
+
+	input,
+	textarea {
+		width: 90%;
+	}
+}
+
+@media (max-width: 480px) {
+	.nav__container {
+		height: auto;
+	}
+	.nav__list {
+		flex-direction: column;
+		justify-content: center;
+		gap: 0.1rem;
+	}
+
+	.header {
+		margin-top: 12rem;
+	}
+
+	.blog__img {
+		flex-direction: column;
+		height: auto;
+		width: 100%;
+	}
+
+	.blog__gallary img {
+		width: 100%;
+	}
+
+	input,
+	textarea {
+		width: 100%;
+	}
+}
